@@ -1,0 +1,12 @@
+//
+   Created by Breeze on 3/5/15.
+extends layout
+
+block content
+    h1.
+        User List
+    u1
+        each user, i in userlist
+            li
+                a(href="mailto:#{user.email}")= user.username
+
