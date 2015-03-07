@@ -6,9 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 //connect to mongo
-var mongo = require('mongodb'); // we want to talk to mongodb
-var mongoose = require('monk'); // we use monk to do it.
-var db = mongoose('localhost:27017/node101db'); //our db is located at URL, db is a monk obj
+var mongo = require('monk'); // we use monk to do it.
+var db = mongo('localhost:27017/node101db'); //our db is located at URL, db is a monk obj
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
